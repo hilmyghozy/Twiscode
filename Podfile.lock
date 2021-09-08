@@ -1,0 +1,42 @@
+PODS:
+  - Alamofire (5.4.3)
+  - FloatingPanel (2.4.0)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - NVActivityIndicatorView/Extended (5.1.1):
+    - NVActivityIndicatorView/Base
+  - SDWebImage (5.11.1):
+    - SDWebImage/Core (= 5.11.1)
+  - SDWebImage/Core (5.11.1)
+  - TTGSnackbar (1.10.5)
+
+DEPENDENCIES:
+  - FloatingPanel
+  - Moya (~> 15.0)
+  - NVActivityIndicatorView/Extended
+  - SDWebImage (~> 5.0)
+  - TTGSnackbar
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - FloatingPanel
+    - Moya
+    - NVActivityIndicatorView
+    - SDWebImage
+    - TTGSnackbar
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  FloatingPanel: fa60183672ed86313b9e241e34465e82211260e8
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
+  TTGSnackbar: 2bd245d2bbf83639483410273fd936af0b7ba2a9
+
+PODFILE CHECKSUM: ff076daa9c3f5c0a9161718f6ca3a5db7e7f2a7e
+
+COCOAPODS: 1.11.0

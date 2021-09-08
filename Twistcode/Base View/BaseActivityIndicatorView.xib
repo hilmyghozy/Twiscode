@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSans-Bold.ttf">
+            <string>NotoSans-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="9gH-Xa-eUK" customClass="BaseActivityIndicatorView" customModule="Twistcode" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qrv-wr-2BO">
+                    <rect key="frame" x="107" y="398" width="200" height="100"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJE-fA-bV4" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                            <rect key="frame" x="85" y="26" width="30" height="30"/>
+                            <color key="backgroundColor" systemColor="systemYellowColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="SeU-Ef-IQK"/>
+                                <constraint firstAttribute="width" constant="30" id="T5Q-v8-jfc"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                    <color key="value" systemColor="systemOrangeColor"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Wait" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6aj-m5-zql">
+                            <rect key="frame" x="0.0" y="72" width="200" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="zPO-aM-dSC"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="16"/>
+                            <color key="textColor" systemColor="systemOrangeColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="6aj-m5-zql" secondAttribute="trailing" id="6MA-3Z-BJQ"/>
+                        <constraint firstAttribute="height" constant="100" id="8yV-CU-9gV"/>
+                        <constraint firstItem="6aj-m5-zql" firstAttribute="leading" secondItem="Qrv-wr-2BO" secondAttribute="leading" id="cgP-WW-JC8"/>
+                        <constraint firstAttribute="bottom" secondItem="6aj-m5-zql" secondAttribute="bottom" id="kOQ-YE-52A"/>
+                        <constraint firstItem="uJE-fA-bV4" firstAttribute="centerX" secondItem="Qrv-wr-2BO" secondAttribute="centerX" id="qlq-if-9bz"/>
+                        <constraint firstAttribute="width" constant="200" id="rFh-mP-doZ"/>
+                        <constraint firstItem="6aj-m5-zql" firstAttribute="top" secondItem="uJE-fA-bV4" secondAttribute="bottom" constant="16" id="vih-wO-lMu"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="v4r-up-Ern"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Qrv-wr-2BO" firstAttribute="centerY" secondItem="9gH-Xa-eUK" secondAttribute="centerY" id="4ao-n0-ybV"/>
+                <constraint firstItem="Qrv-wr-2BO" firstAttribute="centerX" secondItem="9gH-Xa-eUK" secondAttribute="centerX" id="bc1-ku-u5A"/>
+            </constraints>
+            <connections>
+                <outlet property="loadingIndicator" destination="uJE-fA-bV4" id="0Ya-tS-D0E"/>
+            </connections>
+            <point key="canvasLocation" x="194" y="33"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
